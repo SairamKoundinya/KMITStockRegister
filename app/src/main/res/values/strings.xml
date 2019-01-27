@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Stock Selection</string>
+    <string name="tab_text_1">Shop</string>
+    <string name="tab_text_2">Goods</string>
+
+    <string name="menu1">Create Shop</string>
+    <string name="eshop">Edit Shop</string>
+    <string name="back">Back</string>
+    <string name="menu2">Create Goods</string>
+    <string name="egood">Edit Product</string>
+    <string name="selectindustry">Select Industry : </string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+
+    <string name="shopname">Shop Name</string>
+    <string name="ind">Industry Name : </string>
+    <string name="address">Address</string>
+    <string name="vendorname">Vendor Name</string>
+    <string name="phone">Phone</string>
+
+    <string name="email">Email</string>
+    <string name="website">Website</string>
+    <string name="timings">Timings</string>
+    <string name="info">Extra Info</string>
+    <string name="save">Save</string>
+    <string name="date">Date</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="deltitle">Delete Shop</string>
+    <string name="deltitle2">Delete Product</string>
+    <string name="delmsg">Are you sure, you want to remove it</string>
+    <string name="sdetails">--- Shop Details ---</string>
+    <string name="pdetails">--- Product Details ---</string>
+
+    <string name="productname">Product Name</string>
+    <string name="rate">Rate</string>
+    <string name="prate">Product Rate : </string>
+    <string name="brand">Brand</string>
+    <string name="quantity">Quantity</string>
+    <string name="warranty">Warranty</string>
+</resources>

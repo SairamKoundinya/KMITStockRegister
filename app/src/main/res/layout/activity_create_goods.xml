@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/whi"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="edu.app.kmit.stockselection.CreateGoods">
+
+    <android.support.v7.widget.CardView
+        android:layout_height="50dp"
+        app:cardBackgroundColor="@color/colorPrimary"
+        android:layout_width="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="0dp"
+                android:layout_weight=".10"
+                android:layout_margin="8dp"
+                android:onClick="back"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/back"
+                android:src="@drawable/back"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:id="@+id/title"
+                android:layout_weight=".82"
+                android:text="@string/menu2"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight=".08"
+                android:layout_margin="8dp"
+                android:onClick="save"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/save"
+                android:src="@drawable/save"
+                />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/goodshopname"
+                    android:layout_width="0dp"
+                    android:layout_weight=".40"
+                    android:textColor="@color/colorPrimary"
+                    android:text="@string/selectindustry"
+                    android:textSize="15sp"
+
+                    android:layout_height="wrap_content" />
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="0dp"
+                    android:layout_weight=".60"
+                    android:layout_height="wrap_content">
+
+                </Spinner></LinearLayout>
+                <AutoCompleteTextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/productname"
+                    android:hint="@string/productname"
+                    android:layout_margin="3dp"
+                    android:layout_height="wrap_content" />
+                <!--<android.support.design.widget.TextInputLayout-->
+
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_margin="3dp">-->
+
+                    <!--<android.support.design.widget.TextInputEditText-->
+                        <!--android:id="@+id/productname"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:hint="@string/productname" />-->
+                <!--</android.support.design.widget.TextInputLayout>-->
+
+
+                <android.support.design.widget.TextInputLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/quantity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/quantity"
+                        />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/warranty"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/warranty"
+                        />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/brand"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/brand"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                <android.support.design.widget.TextInputLayout
+
+                    android:layout_width="0dp"
+                    android:layout_weight=".92"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:id="@+id/extrainfo"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/info"
+                        android:inputType="textLongMessage" />
+                </android.support.design.widget.TextInputLayout>
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_margin="3dp"
+                    android:layout_weight=".08"
+                    android:onClick="clear"
+                    android:id="@+id/infoimg"
+                    android:contentDescription="@string/info"
+                    android:src="@drawable/clear"
+                    android:layout_height="match_parent" /></LinearLayout>
+
+                <RatingBar
+                    android:layout_width="wrap_content"
+                    android:numStars="5"
+                    android:layout_gravity="center"
+                    android:layout_margin="3dp"
+                    android:id="@+id/rate"
+                    android:stepSize="0.5"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </ScrollView>
+</LinearLayout>
